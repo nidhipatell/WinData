@@ -1,5 +1,6 @@
 .background
 {
+    position: fixed;
     background-image: url("bridge.jpg");
     background-repeat: no-repeat;
     height: 100%;
