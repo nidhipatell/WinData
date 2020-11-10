@@ -17,3 +17,17 @@
     margin-left: -200px;
     color: #ffffff;   
 }
+.container
+{  
+text-align: center;  
+width: 500px;  
+height: 500px;  
+padding-top: 300px;
+padding-right: 900px;
+padding-left: 700px;
+ 
+}  
+.btn
+{  
+    font-size: 25px;  
+}  
