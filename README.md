@@ -7,6 +7,7 @@ All the Datasets are used from [here](https://opendata.citywindsor.ca/)
 [Code Repository](https://github.com/nidhipatell/WinData) |
 [Bug Reporting](https://github.com/nidhipatell/WinData/issues) |
 [Project Management](https://github.com/nidhipatell/WinData/projects/1) | 
-[Documentation Repository](https://github.com/nidhipatell/WinData/wiki)
+[Documentation Repository](https://github.com/nidhipatell/WinData/wiki) |
+[Testing Strategy](https://github.com/nidhipatell/WinData/tree/main/Iteration%20I/testing)
 
 <img src="https://miro.medium.com/max/1600/1*a-HMfeg5w-W02Nrw21iPtg.gif" width="200" height="200" />
