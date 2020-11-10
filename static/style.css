@@ -18,17 +18,23 @@
     margin-left: -200px;
     color: #ffffff;   
 }
+
 .container
 {  
 text-align: center;  
 width: 500px;  
 height: 500px;  
-padding-top: 300px;
-padding-right: 900px;
-padding-left: 700px;
+padding-top: 250px;
+padding-right: 100px;
+padding-left: 430px;
  
 }  
 .btn
 {  
-    font-size: 25px;  
+    font-size: 25px;
+a:hover
+    {
+        box-shadow: 10px 10px 10px #FF7F50;
+
+    } 
 }  
