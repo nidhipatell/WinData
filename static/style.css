@@ -16,34 +16,44 @@
     left:60%;
     margin-top: -100px;
     margin-left: -200px;
-    color: #ffffff;   
+    color: #ffffff;
+    justify-content: center;   
 }
 
 .container
 {  
-text-align: center;  
-width: 500px;  
-height: 500px;  
-padding-top: 250px;
-padding-right: 100px;
-padding-left: 430px;
- 
+    text-align: center;  
+    width: 500px;  
+    height: 500px;  
+    padding-top: 250px;
+    padding-right: 100px;
+    padding-left: 430px;
+    position: relative;
 }  
-.btn
+.open-data
 {  
     font-size: 25px;
-    background:none;
-    position: center;
-}  
-.btn:hover
-    {
-        box-shadow: 10px 10px 10px #000000;
+    background-color: Transparent;
+    border: 1px solid black;
+}
 
-    } 
+.open-data:hover
+{
+    border:0px;
+}
+
+.btn:hover
+{
+    box-shadow: 10px 10px 10px #000000;
+    background-color: indianred;
+} 
 
 .buttons
 {
     font-size: 40px;
     margin-left: 100px;
     margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
