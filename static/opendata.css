@@ -1,5 +1,99 @@
-.background
-{
-    height: 400px;
-    background: linear-gradient(to bottom, #ff3300 0%, #ffff00 100%);
+*{
+    margin-top: 0%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.parent {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 80%;
+}
+
+.child {
+    background-image: url('windsor.jpg');
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.col-lg-12 {
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.para {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 40px;
+    /* margin-top:0%; */
+    padding-bottom: 40px;
+    background-size: fixed;
+    /* background-color: antiquewhite; */
+    text-align: center;
+    color: white;
+}
+
+.boxes {
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+.datasets {
+    border: 1px solid black;
+}
+
+.datasets p {
+    padding: 5px;
+    text-align: center;
+}
+
+.services-cap h3 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.firsthead h1 {
+    padding-top: 40px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.panel {
+    padding: 20px 20px 50px 20px;
+    border: 1px;
+    border-style: groove;
+}
+
+.description .deschead {
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.description p {
+    background-color: cornflowerblue;
+    color: white;
+    padding-left: 40px;
+}
+
+.downloads {
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.download-links {
+    padding-bottom: 50px;
+    border: 1px;
+    border-style: groove;
+    margin-right: 85%;
+    margin-bottom: 20px;
+
 }

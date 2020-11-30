@@ -1,34 +1,21 @@
 <html>
 
-<head>
-    <title>WinData</title>
-    <link rel="stylesheet" href="../static/style.css">
-    <link rel="icon" href="../static/favicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+    <head>
+        <title>WinData</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+        <link rel="icon" href="../static/favicon.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
 
-<body class="background">
+    <body class="background">
 
-    <h1 class="title">WinData</h1>
-    <div text-align="center" class="container">
-
-        <div class="buttons">
-
-            <button type="button" class="btn btn-primary btn-lg">Open Data</button>
-
+        <h1 class="title">WinData</h1>
+        <div text-align="center" class="container">
+            <div class="buttons">
+                <a class="open-data" href="{{ url_for('datasets') }}"><button class="btn btn-primrary btn-lg open-data">Explore the DataSet</button></a>
+            </div>
         </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-</body>
+    </body>
 
 </html>

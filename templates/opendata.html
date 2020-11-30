@@ -1,25 +1,80 @@
 <html>
+
 <head>
-    <title>WinData</title>
-    <link rel="stylesheet" href="../static/opendata.css">
-    <link rel="icon" href="../static/favicon.png">
+  <title>WinData</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='opendata.css')}}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="icon" href="{{url_for('static',filename='favicon.png')}}">
+
+  <meta name="viewport" content="width=device-width">
 </head>
 
-<body class="background">
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+<body>
+  <div class="parent">
+    <div class="child">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>WinData</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="para">
+            <p>
+              WinData is a new way to access data portals. Forget the old ways of downloading the files, now you can
+              view it directly in your browser and increase your productivity. You can also download the files if you
+              want with just one simple click away.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
   </div>
-</nav>
+  <hr>
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://media.istockphoto.com/photos/presidential-election-day-voting-concept-picture-id611606520"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Official Election 2010</h5>
+          <p class="card-text">This dataset is about the official elections from 2010. You will find the votes and
+            runners in the election</p>
+          <a href="{{ url_for('election2010') }}" class="btn btn-primary">Go to Dataset</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="col-sm-4">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://c0.wallpaperflare.com/preview/565/942/426/red-allianz-arena-thumbnail.jpg"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Arena</h5>
+          <p class="card-text">These point files contain the Name, Address, URL and X & Y Coordinates of each of the
+            City's owned and operated arenas.</p>
+          <a href="#" class="btn btn-primary">Go to Dataset</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top"
+          src="https://www.nortonrosefulbright.com/-/media/images/nrf/nrfweb/knowledge/publications/texas-hospital-district-emerges-from-bankruptcy-hero.jpg?la=en&revision=7d12e392-bab7-4032-9fcb-2ce8d4559719&hash=FBB984393CACFD1484C240FA8B0AB7E422C44C4B"
+          alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Hospital</h5>
+          <p class="card-text">These point files contain the name, address and X&Y Coordinates of each of the City’s
+            hospitals.</p>
+          <a href="#" class="btn btn-primary">Go to Dataset</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </body>
 
