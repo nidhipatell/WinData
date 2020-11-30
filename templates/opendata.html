@@ -2,10 +2,10 @@
 
 <head>
   <title>WinData</title>
-  <link rel="stylesheet" href="../static/opendata.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='opendata.css')}}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="icon" href="../static/favicon.png">
+  <link rel="icon" href="{{url_for('static',filename='favicon.png')}}">
 
   <meta name="viewport" content="width=device-width">
 </head>
@@ -42,7 +42,7 @@
           <h5 class="card-title">Official Election 2010</h5>
           <p class="card-text">This dataset is about the official elections from 2010. You will find the votes and
             runners in the election</p>
-          <a href="election2010.html" class="btn btn-primary">Go to Dataset</a>
+          <a href="{{ url_for('election2010') }}" class="btn btn-primary">Go to Dataset</a>
         </div>
       </div>
     </div>

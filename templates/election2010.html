@@ -10,7 +10,7 @@
         <title>Election 2010</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../static/election2010.css">
+        <link rel="stylesheet" href="{{url_for('static',filename='election2010.css')}}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -35,11 +35,13 @@
                   <h5 class="card-title">Relevant Downloads:</h5>
                   <a href="../Iteration I/testing/OfficialElection2010.xls" download>Election2010.xls</a>
                   <br><br>
-                  <a href="opendata.html" class="btn btn-primary bleh">Go Back</a>
-                  <a href="opendata.html" class="btn btn-primary">Visualize Data</a>
+                  <a href="{{ url_for('datasets') }}" class="btn btn-primary bleh">Go Back</a>
+                  <a href="{{ url_for('election2020Vizualize') }}" class="btn btn-primary">Visualize Data</a>
+
+                  <img src="/datasets/election2010/vizualize" alt="Chart" height="0" width="0">
 
                 </div>
-              </div>
+            </div>
         </div>
     </body>
 </html>
