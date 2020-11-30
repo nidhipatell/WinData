@@ -3,6 +3,7 @@ import io, random
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.figure import Figure
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -27,11 +28,17 @@ def election2020Vizualize():
     return Response(output.getvalue(), mimetype='image/png')
 
 def create_figure():
-    fig = Figure()
-    axis = fig.add_subplot(1, 1, 1)
-    xs = range(100)
-    ys = [random.randint(1, 50) for x in xs]
-    axis.plot(xs, ys)
+    filepath = "Iteration I\\testing\\OfficialElection2010.xls"
+    dataframe = pd.read_excel(filepath) if filepath[-3:] == "xls" else pd.read_csv(filepath)
+    candidates = dataframe["Candidate"].unique()
+    candidates = dict.fromkeys(candidates, 0)
+    for index, row in dataframe.iterrows():
+        candidate_name = row["Candidate"]
+        candidates[candidate_name] += row["Total"]
+    newdf = pd.DataFrame.from_dict(candidates, orient='index')
+    # fig = Figure.add_subplot(newdf.plot(kind="bar"))
+    fig = newdf.plot(kind="bar", figsize=(20,16)).get_figure()
+    #fig.savefig("static\\images\\election2010.png")
     return fig
 
 if __name__ == "__main__":
