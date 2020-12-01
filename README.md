@@ -10,4 +10,6 @@ All the Datasets are used from [here](https://opendata.citywindsor.ca/)
 [Documentation Repository](https://github.com/nidhipatell/WinData/wiki) |
 [Testing Strategy](https://github.com/nidhipatell/WinData/tree/main/Iteration%20I/testing)
 
+To run the program run the __init__.py file by doing python __init__.py. All the HTML files are in /templates/ and all the images and css files are in /static/
+
 <img src="https://miro.medium.com/max/1600/1*a-HMfeg5w-W02Nrw21iPtg.gif" width="200" height="200" />
