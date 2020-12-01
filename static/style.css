@@ -40,12 +40,14 @@
 .open-data:hover
 {
     border:0px;
+    color: white;
 }
 
 .btn:hover
 {
     box-shadow: 10px 10px 10px #000000;
     background-color: indianred;
+    color: white;
 } 
 
 .buttons
